@@ -5,10 +5,102 @@
     <link rel="stylesheet" href="src/assets/style/css/global.css">
     <link rel="stylesheet" href="src/assets/style/css/app_header.css">
     <link rel="stylesheet" href="src/assets/style/css/all.min.css">
+    <link rel="stylesheet" href="src/assets/style/css/main-section.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <title>MadinaTrip</title>
 </head>
 <body>
+    <header class="app-header">
+        <div class="container">
+            <div class="logo">
+                <h1>MT</h1>
+            </div>
+            <nav class="navigation">
+                <a href="#" class="link active">
+                    <span class="title">Home</span>
+                    <i class="icon fas fa-home"></i>
+                </a>
+                <a href="#" class="link">
+                    <span class="title">services</span>
+                    <i class="icon fas fa-car"></i>
+                </a>
+                <a href="#" class="link">
+                    <span class="title">About</span>
+                    <i class="icon fas fa-info-circle"></i>
+                </a>
+                <a href="#" class="link">
+                    <span class="title">Reviews</span>
+                    <i class="icon fas fa-star"></i>
+                </a>
+                <a href="#" class="link">
+                    <span class="title">Contact</span>
+                    <i class="icon fas fa-envelope"></i>
+                </a>
+            </nav>
+            <div class="account">
+                <button class="menu">
+                    <span class="title">Login</span>
+                    <i class="icon fas fa-user"></i>
+                </button>
+                <div action="" class="auth">
+                    <header>
+                        <div>
+                            <h1>Create Your Account Now!</h1>
+                            <p>Already Have An Account? <a href="#" class="login">Login</a></p>
+                        </div>
+                        <div class="close">
+                            <i class="fas fa-close icon"></i>
+                        </div>
+                    </header>
+                    <form action="" class="signup">
+                        
+                        <div class="box">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" class="name" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="box">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="box">
+                            <label for="name">Password</label>
+                            <input type="password" name="password" class="password" id="password" placeholder="Enter your password">
+                        </div>
+                        <div class="box not-input">
+                            <input type="checkbox" name="agree" id="agree">
+                            <span>I agree with <a href="#" class="terms">Terms & services</a></span>
+                        </div>
+                        <div class="box not-input">
+                            <button type="submit">
+                                Sign up
+                                <i class="icon fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <p class="or">OR</p>
+                    <div class="options">
+                        <div class="box">
+                            <img src="src/assets/images/google.png" alt="google logo">
+                            <p>Sign up with Google</p>
+                        </div>
+                        <div class="box">
+                            <i class="icon fab fa-x-twitter"></i>
+                            <p>Sign up with X</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="welcome">
+        <img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?q=80&w=1767&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="morrocan picture">
+        <div class="txt">
+            Your Journey Starts Here
+        </div>
+        <button class="scroll-down">
+            <i class="icon fas fa-angles-down"></i>
+        </button>
+    </main>
     <script src="src/scripts/js/main.js"></script>
 </body>
 </html>

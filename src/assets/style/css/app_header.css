@@ -1,0 +1,307 @@
+.app-header{
+    background-color: var(--background-primary);
+    box-shadow: 0 2px 10px #fff1;
+    border-bottom: 1px solid #111;
+}
+.app-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    position: relative;
+    flex-flow: row wrap;
+}
+.app-header .container .logo {
+    width: fit-content;
+    max-width: 50px;
+    max-height: 50px;
+    color: var(--text-primary-dark);
+}
+.app-header .container .logo h1 {
+    font-weight: normal;
+}
+@media (max-width: 961px) {
+    .app-header .container .logo h1 {
+        font-size: 1.6em;
+    }
+}
+.app-header .container .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.app-header .container .navigation .link {
+    display: block;
+    padding: 8px 26px;
+    border-radius: 6px;
+    font-size: 1em;
+    color: var(--text-secondary-dark);
+    font-weight: bold;
+}
+.app-header .container .navigation .link.active:hover {
+    background-color: var(--hover-primary);
+    color: var(--text-primary-dark);
+}
+.app-header .container .navigation .link.active {
+    color: #333;
+    background-color: var(--button-primary);
+    transition: background-color 0.3s;
+}
+@media (min-width: 768px) {
+    .app-header .container .navigation .link .icon {
+        display: none;
+    }
+    .app-header .container .account button.menu .icon {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .app-header .container {
+        flex-flow: column wrap;
+    }
+    .app-header .container .logo {
+        display: none;
+    }
+    .app-header .container .navigation {
+        order: -1;
+        flex: 1;
+        width: 100%;
+    }
+    .app-header .container .navigation .link {
+        padding: 8px 16px;
+    }
+    .app-header .container .navigation .link .icon {
+        display: block;
+        font-size: 1.3em;
+    }
+    .app-header .container .account button.menu .icon {
+        display: none;
+    }
+    /* .app-header .container .account button.menu .title {
+        display: none;
+    } */
+    .app-header .container .navigation .link .title {
+        display: none;
+    }
+}
+@media (max-width: 961px) {
+    .app-header .container .navigation .link {
+        font-size: .9em;
+    }
+}
+.app-header .container .account button.menu {
+    display: block;
+    width: fit-content;
+    padding: 8px 22px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--button-primary);
+    border: 1px solid var(--button-primary);
+    transition: background-color 0.3s;
+}
+@media (max-width: 961px) {
+    .app-header .container .account button.menu {
+        font-size: .9em;
+        padding: 8px 18px;
+    }
+}
+.app-header .container .account button.menu:hover {
+    color: var(--hover-secondary);
+    border: 1px solid var(--hover-secondary);
+}
+.app-header .container .account .auth {
+    position: absolute;
+    background-color: var(--background-secondary-dark);
+    border: 2px solid #333;
+    box-shadow: 0 0 15px #fff1;
+    top: 95%;
+    right: 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+    z-index: 4;
+}
+.app-header .container .account .auth.active {
+    display: block;
+}
+.app-header .container .account .auth header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.app-header .container .account .auth header div.close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 1.4em;
+    color: var(--text-primary-dark);
+    background-color: #222;
+    border-radius: 6px;
+}
+.app-header .container .account .auth header div:not(.close) h1 {
+    font-size: 1.6em;
+    color: var(--text-primary-dark);
+}
+.app-header .container .account .auth header div:not(.close) p {
+    font-size: 1em;
+    color: #ccc;
+    padding: 10px 0;
+}
+.app-header .container .account .auth header div:not(.close) p a {
+    font-size: 1.1em;
+    color: var(--button-primary);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.app-header .container .account .auth .options {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    padding: 10px 0;
+}
+.app-header .container .account .auth .options .box:not(not-input) {
+    width: 100%;
+    border: 1px solid #444;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: 1em;
+    color: var(--text-primary-dark);
+}
+.app-header .container .account .auth .options .box img {
+    max-width: 20px;
+}
+.app-header .container .account .auth .or {
+    color: var(--text-primary-dark);
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+.app-header .container .account .auth .signup {
+    position: relative;
+}
+.app-header .container .account .auth .signup .box:not(.not-input) {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 6px;
+    margin: 10px auto;
+    width: 100%;
+}
+.app-header .container .account .auth .signup .box:not(.not-input).error label {
+    color: #f00;
+}
+.app-header .container .account .auth .signup .box:not(.not-input).error input {
+    border-color: #f00;
+    color: #f00;
+}
+.app-header .container .account .auth .signup .box:not(.not-input).error input::placeholder {
+    color: rgb(241, 58, 17);
+}
+.app-header .container .account .auth .signup .box label {
+    position: relative;
+    color: var(--text-primary-dark);
+    font-size: 1em;
+    /* padding-left: 10px; */
+}
+/* .app-header .container .account .auth .signup .box label::before {
+    content: "*";
+    color: #333;
+    position: absolute;
+    left: -5px;
+    font-size: 1.1em;
+    font-weight: bold;
+} */
+.app-header .container .account .auth .signup .box input {
+    display: block;
+    width: 100%;
+    border: 1.5px solid #444;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--text-primary-dark);
+    font-weight: bold;
+    font-size: 1em;
+    background-color: transparent;
+}
+.app-header .container .account .auth .signup .box input:hover {
+    border-color: var(--button-primary);
+}
+.app-header .container .account .auth .signup .box:nth-of-type(4) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px auto;
+}
+.app-header .container .account .auth .signup .box:nth-of-type(4) input {
+    width: 30px;
+    cursor: pointer;
+}
+.app-header .container .account .auth .signup .box:nth-of-type(4) input:checked {
+    accent-color: var(--button-primary);
+}
+.app-header .container .account .auth .signup .box:nth-of-type(4) span {
+    font-size: 1em;
+    color: var(--text-primary-dark);
+}
+.app-header .container .account .auth .signup .box:nth-of-type(4).error span {
+    color: #f00;
+    animation: error .4s linear 1 both alternate;
+}
+@keyframes error {
+    0%, 100% {
+        scale: 1;
+    }
+    30% {
+        scale: .9;
+    }
+    40% {
+        scale: 1.03;
+    }
+    60% {
+        scale: .95;
+    }
+    70% {
+        scale: 1.1;
+    }
+}
+.app-header .container .account .auth .signup .box:nth-of-type(4) span a {
+    color: var(--button-primary);
+    text-decoration: underline;
+}
+/* .app-header .container .account .auth .signup .box:nth-of-type(5) {
+    display: flex;
+} */
+.app-header .container .account .auth .signup .box:nth-of-type(5) button {
+    display: flex;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--button-primary);
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.app-header .container .account .auth .signup .box:nth-of-type(5) button:hover {
+    background-color: var(--hover-primary);
+    color: #222;
+}

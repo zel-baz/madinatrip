@@ -1,0 +1,22 @@
+[
+    {
+        "img": "https://images.unsplash.com/photo-1708823081494-3e5bbd2ce931?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Jemaa el-Fna, Marrakech, Maroc"
+    },
+    {
+        "img": "https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Marrakech, Morocco"
+    },
+    {
+        "img": "https://images.unsplash.com/photo-1653323792487-6ecc6217040b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Marrakech, Morocco"
+    },
+    {
+        "img": "https://images.unsplash.com/photo-1535190878546-79d24dae2530?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Sahara Desert, Marrakech, Morocco"
+    },
+    {
+        "img": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?q=80&w=1767&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "location": "Tamnougalt, Morocco"
+    }
+]

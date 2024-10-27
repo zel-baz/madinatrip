@@ -1,7 +1,14 @@
 :root {
-    --bg: #111;
-    --txt: #fff;
-    --main-clr: rgb(34, 255, 0);
+    /* Dark Theme Colors */
+    --background-primary: #020202;
+    --background-secondary: #0D2818;
+    --background-secondary-dark: #1f1f1f;
+    --text-primary-dark: #FFFFFF;
+    --text-secondary-dark: #CCCCCC;
+    --button-primary: #16DB65;
+    --button-secondary: #058C42;
+    --hover-primary: #13A552;
+    --hover-secondary: #036C34;
 }
 :focus {
     outline: none;
@@ -46,11 +53,21 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 body {
-    background-color: var(--bg);
-    color: var(--txt);
+    background-color: var(--background-primary);
+    color: var(--text-primary-dark);
     font-family: sans-serif;
     min-height: 100vh;
     position: relative;
+}
+body.light-theme {
+    --background-primary: #FFFFFF;
+    --background-secondary: #F4F4F4;
+    --text-primary-light: #020202;
+    --text-secondary-light: #333333;
+    --button-primary: #058C42;
+    --button-secondary: #04471C;
+    --hover-primary: #16DB65; /* Slightly lighter */
+    --hover-secondary: #036C34; /* Slightly lighter */
 }
 
 
