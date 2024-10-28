@@ -1,0 +1,201 @@
+.section {
+    position: relative;
+    margin: 50px 0;
+    min-height: calc(100vh - 100px);
+}
+.section .container {
+    padding: 15px;
+}
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    color: var(--text-secondary-dark);
+    margin-bottom: 50px;
+}
+.section .container .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+.section .container .boxes .box {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #111;
+    position: relative;
+    border: 1px solid #333;
+}
+.section .container .boxes .box .pic {
+    width: 100%;
+    height: 200px;
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.section .container .boxes .box .pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section .container .boxes .box .title {
+    color: var(--text-primary-dark);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3em;
+}
+.section .container .boxes .box .description {
+    font-size: 1em;
+    color: #aaa;
+}
+.section .container .boxes .box .action {
+    margin: 10px auto;
+}
+.section .container .boxes .box .action a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: var(--button-primary);
+    border-radius: 8px;
+    transition: background .3s;
+}
+.section .container .boxes .box .action a:hover {
+    color: #111;
+    background-color: var(--button-secondary);
+}
+.section .container .boxes .box .reviews {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 10px 0;
+}
+.section .container .boxes .box .reviews .icon {
+    color: rgb(238, 255, 0);
+    font-size: .9em;
+}
+.section .container .boxes .box .reviews .num {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--text-primary-dark);
+}
+
+
+
+
+
+/* For about section */
+.section .container .boxes .box .section-icon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background: linear-gradient(45deg, #ffaa00, #66ff00, #007ffe);
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    color: transparent;
+}
+.section .container .boxes .box h1 {
+    color: var(--text-primary-dark);
+    text-align: center;
+    margin: 10px auto;
+}
+.section .container .boxes .box p {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #aaa;
+}
+.section .container .boxes .box.our-team {
+    grid-column: 1/-1;
+    background-color: transparent;
+    border: none;
+}
+.section .container .boxes .box.our-team .team {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.section .container .boxes .box.our-team .team .member {
+    background-color: #111;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+.section .container .boxes .box.our-team .team .member .member-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #222;
+    margin: auto;
+    overflow: hidden;
+}
+.section .container .boxes .box.our-team .team .member .member-pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.section .container .boxes .box.our-team .team .member .name {
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    margin: 10px auto;
+}
+.section .container .boxes .box.our-team .team .member .role {
+    color: var(--button-primary);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.section .container .boxes .box.our-team .team .member .about {
+    font-size: 1em;
+    color: #aaa;
+    line-height: 1.4em;
+    padding: 10px 0;
+}
+.section .container .boxes .box.our-team .team .member .social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin: 10px auto;
+}
+.section .container .boxes .box.our-team .team .member .social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% /6);
+    padding: 8px 0;
+    border-radius: 4px;
+    font-size: 1.4em;
+    color: var(--text-primary-dark);
+}
+.section .container .boxes .box.our-team .team .member .social-media a:first-of-type {
+    color: #b4b4b4;
+}
+.section .container .boxes .box.our-team .team .member .social-media a:nth-of-type(2) {
+    color: #0088CC;
+}
+.section .container .boxes .box.our-team .team .member .social-media a:nth-of-type(3) {
+    color: #1877F2;
+}
+.section .container .boxes .box.our-team .team .member .social-media a:nth-of-type(4) {
+    background: linear-gradient(to right, #F58529, #FEDA77, #DD2A7B, #8134B8, #A135E4);
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    color: transparent;
+}
+.section .container .boxes .box.our-team .team .member .social-media a:nth-of-type(5) {
+    color: #25D366;
+}
+.section .container .boxes .box.our-team .team .member .social-media a:last-of-type {
+    color: #DB4437;
+}
