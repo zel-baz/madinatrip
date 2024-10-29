@@ -117,6 +117,9 @@
     background-color: transparent;
     border: none;
 }
+.section .container .boxes .box.our-team .title {
+    font-size: 2em;
+}
 .section .container .boxes .box.our-team .team {
     width: 100%;
     display: grid;
@@ -148,7 +151,8 @@
     font-size: 1.4em;
     font-weight: normal;
     text-align: center;
-    margin: 10px auto;
+    margin: 15px auto;
+    margin-bottom: 0;
 }
 .section .container .boxes .box.our-team .team .member .role {
     color: var(--button-primary);

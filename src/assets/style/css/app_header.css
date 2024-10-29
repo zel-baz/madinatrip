@@ -44,7 +44,7 @@
 }
 .app-header .container .navigation .link.active:hover {
     background-color: var(--hover-primary);
-    color: var(--text-primary-dark);
+    color: #111;
 }
 .app-header .container .navigation .link.active {
     color: #333;
@@ -168,7 +168,6 @@
     display: flex;
     flex-flow: column wrap;
     gap: 15px;
-    padding: 10px 0;
 }
 .app-header .container .account .auth .options .box:not(not-input) {
     width: 100%;
@@ -185,6 +184,7 @@
 }
 .app-header .container .account .auth .options .box img {
     max-width: 20px;
+    max-height: 20px;
 }
 .app-header .container .account .auth .or {
     color: var(--text-primary-dark);
