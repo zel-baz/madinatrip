@@ -43,12 +43,12 @@
     font-weight: bold;
 }
 .app-header .container .navigation .link.active:hover {
-    background-color: var(--hover-primary);
-    color: #111;
+    /* background-color: var(--hover-primary); */
+    color: var(--button-secondary);
 }
 .app-header .container .navigation .link.active {
-    color: #333;
-    background-color: var(--button-primary);
+    color: var(--button-primary);
+    /* background-color: var(--button-primary); */
     transition: background-color 0.3s;
 }
 @media (min-width: 768px) {
@@ -103,8 +103,9 @@
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
-    color: var(--button-primary);
-    border: 1px solid var(--button-primary);
+    background-color: var(--button-primary);
+    color: #333;
+    border: none;
     transition: background-color 0.3s;
 }
 @media (max-width: 961px) {
@@ -114,8 +115,8 @@
     }
 }
 .app-header .container .account button.menu:hover {
-    color: var(--hover-secondary);
-    border: 1px solid var(--hover-secondary);
+    color: #111;
+    background-color: var(--button-secondary);
 }
 .app-header .container .account .auth {
     position: absolute;
